@@ -3,7 +3,7 @@
     <x-carousel />
     <div class="grid text-center gap-3 px-4 lg:flex lg:justify-around lg:items-center bg-[#316275] py-5 lg:py-10 text-white">
         <div class="lg:text-3xl font-bold italic">Celebrating 69 Years of Trusted Service</div>
-        <x-button label="Contact us now!" class="lg:text-xl font-bold" cyan />
+        <x-button href="/contacts" label="Contact us now!" class="lg:text-xl font-bold" cyan />
     </div>
     <section
         x-data="{ show: false }" 
@@ -98,7 +98,7 @@
                     <div>
                         <h2 class="uppercase text-[#316275] font-bold">Installation</h2>
                         <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati ad rem eos soluta ea cumque sapiente dignissimos 
-                            reiciendis. Quo vero doloremque vitae, id perferendis exercitationem consequatur consectetur similique voluptatum.</p>
+                            reiciendis. Quo vero doloremque vitae, id    perferendis exercitationem consequatur consectetur similique voluptatum.</p>
                     </div>
                 </div>
                 <div class="flex gap-5">

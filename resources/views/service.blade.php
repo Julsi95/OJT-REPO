@@ -23,6 +23,56 @@
             </div>
         </div>
    </div>
+   <div class="grid lg:grid-cols-3 gap-7 py-7" x-data="{s: ''}">
+    <div class="border-[1px] border-gray-300 rounded-xl p-5 flex flex-col justify-between gap-5" :class="s === 's1' ? 'h-auto' : 'h-[400px] lg:h-[505px]'">
+        <img class="rounded-2xl max-h-[325px]" src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="space-y-10" >
+            <div style="line-height: .9" class="text-3xl">High Quality Branded Medicine</div>
+            <div @click.away="s = 's'" :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's1'">
+                <p>We understand that when it comes to healthcare, quality is non-negotiable. Our extensive range of branded medicines is manufactured under strict regulatory guidelines and backed by scientific research. We prioritize</p>
+                <ul class="text-sm font-medium space-y-2">
+                    <li class="flex gap-2"><p>✅</p> <span>Certified Quality: Every product is tested for safety and effectiveness.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> Trusted Brands: Partnering with leading pharmaceutical companies to ensure authenticity.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> Global Standards: Complying with international regulations for superior healthcare solutions.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> Patient Safety First: Ensuring each medicine is reliable, effective, and meets healthcare needs.</span></li>
+                </ul>
+            </div>
+            <button @click="s = 's1'">View Details</button>
+        </div>
+    </div>
+    <div class="border-[1px] border-gray-300 rounded-xl p-5 flex flex-col justify-between gap-5" :class="s === 's2' ? 'h-auto duration-300 ease-in' : 'h-[400px] lg:h-[505px]'">
+        <img class="rounded-2xl max-h-[325px]" src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <div class="space-y-10" :class="s === 's2' ? 'h-auto' : 'h-[505px]'">
+            <div style="line-height: .9" class="text-3xl">Supplying Best and Latest Medical Equipments</div>
+            <div @click.away="s = 's'" :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's2'">
+                <p>Equipped with the latest innovations, our medical equipment enhances patient care, improves diagnostic accuracy, and streamlines medical procedures. We provide</p>
+                <ul class="text-sm font-medium space-y-2">
+                    <li class="flex gap-2"><p>✅</p> <span> <strong> State-of-the-Art Technology:</strong> Access to the newest advancements in medical devices.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> <strong> Reliable & Certified Equipment:</strong> Meeting global healthcare standards for safety and efficiency.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> <strong> Wide Range of Solutions:</strong> From diagnostic tools to life-saving surgical instruments.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> <strong> Unmatched Customer Support:</strong> Ensuring seamless integration and ongoing assistance.</span></li>
+                </ul>
+            </div>
+            <button @click="s = 's2'">View Details</button>
+        </div>
+    </div>
+    <div class="border-[1px] border-gray-300 rounded-xl p-5 flex flex-col justify-between gap-5" :class="s === 's3' ? 'h-auto' : 'h-[400px] lg:h-[505px]'">
+        <img class="rounded-2xl max-h-[325px]" src="https://media.istockphoto.com/id/1071110418/photo/ultrasonic-flaw-detector.jpg?s=2048x2048&w=is&k=20&c=4AnDpVytBqv-PmDziYKqndKgt6z-So1gUS8pSo7GuTo=" alt="">
+        <div class="space-y-10" :class="s === 's3' ? 'h-auto' : 'h-[505px]'">
+            <div  style="line-height: .9" class="text-3xl">Installation and Calibration of Medical Equipments </div>
+            <div @click.away="s = 's'" :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's3'">
+                <p>We specialize in the seamless setup and fine-tuning of a wide range of medical equipment, ensuring optimal performance from day one. Our services include</p>
+                <ul class="text-sm font-medium space-y-2">
+                    <li class="flex gap-2"><p>✅</p> <span> <strong> Expert Installation:</strong> Our trained professionals handle every step, from setup to integration.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> <strong> Precision Calibration:</strong> Regular adjustments to maintain accuracy and compliance.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> <strong> Regulatory Compliance:</strong> Ensuring all devices meet global healthcare and safety standards.</span></li>
+                    <li class="flex gap-2"><p>✅</p> <span> <strong> Ongoing Support & Maintenance:</strong> Keeping your equipment in peak condition for long-term reliability.</span></li>
+                </ul>
+            </div>
+            <button @click="s = 's3'">View Details</button>
+        </div>
+    </div>
+</div>
 </x-layout>
 
 

@@ -15,7 +15,8 @@
             <div class="pl-10 py-3 flex items-center gap-3 max-w-[400px]">
                 <img width="60px" src="{{ asset('images/jcorr.png') }}" alt="">
                 <div class=" min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400"></div>
-                <div class="text-2xl font-bold leading-5 text-[#316275] font-serif">JCOR MEDICAL EQUIPMENT</div>
+                {{-- <div class="text-2xl font-bold leading-5 text-[#316275] font-serif">JCOR MEDICAL EQUIPMENT</div> --}}
+                {{-- <div class="text-xl font-bold leading-5 text-[#316275] ">JCOR MEDICAL EQUIPMENT</div> --}}
             </div>
             <div class="px-10 flex items-center gap-10 text-[#316275] font-bold">
                 <a wire:navigate href="/" class="{{ Request::is('/') ? 'text-[#316275] font-bold underline' : 'text-gray-700 hover:text-[#316275]' }}">HOME</a>

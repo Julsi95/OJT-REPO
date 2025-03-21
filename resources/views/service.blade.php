@@ -4,8 +4,17 @@
             <p class="font-bold text-2xl">SERVICES WE OFFER</p>
              <img src="{{ asset('images/jcorr.png') }}" alt="" class="bg-white w-[96px] rounded-lg p-2">
         </div>
-        <div class="flex px-20 overflow-auto  space-x-20 scrollbar-hide" id="serviceScroll">
-            <div class="min-w-full   flex flex-col  items-end">
+        <div class="flex overflow-auto  scrollbar-hide" id="serviceScroll">
+            <p class="absolute font-bold text-[150px] w-[50%] translate-x-2/4  text-[#6fabc3] z-0">Services We Offer</p>
+            <div class="min-w-full  flex flex-col  items-end z-[10] px-20 ">
+                <h1 class="font-bold text-7xl max-w-[40%] text-end leading-[99px] my-5">
+                    Equipment Installation
+                </h1>
+                <p class="text-end max-w-[75%] text-2xl my-5 ">
+                    "As the bewildered platypus meandered aimlessly through the labyrinthine corridors of the abandoned, ivy-covered mansion that smelled faintly of old   parchment and forgotten memories, an inexplicable sense of déjà vu washed over   it, as if in some peculiar, alternate timeline, it had once been the keeper of an    ancient, mystical artifact capable of unlocking the long-lost secrets of a civilization   that had vanished without a trace, leaving only cryptic symbols etched into the stone walls, whispering tales of a forgotten past to those who dared to listen."
+                </p>
+            </div>
+            <div class="min-w-full  flex flex-col  items-end z-[10] px-20">
                 <h1 class="font-bold text-7xl max-w-[40%] text-end leading-[99px] my-5">
                     Equipment Installation
                 </h1>
@@ -13,15 +22,11 @@
                     "As the bewildered platypus meandered aimlessly through the labyrinthine corridors of the abandoned, ivy-covered mansion that smelled faintly of old   parchment and forgotten memories, an inexplicable sense of déjà vu washed over   it, as if in some peculiar, alternate timeline, it had once been the keeper of an    ancient, mystical artifact capable of unlocking the long-lost secrets of a civilization   that had vanished without a trace, leaving only cryptic symbols etched into the stone walls, whispering tales of a forgotten past to those who dared to listen."
                 </p>
             </div>
-            <div class="min-w-full  flex flex-col  items-end">
-                <h1 class="font-bold text-7xl max-w-[40%] text-end leading-[99px] my-5">
-                    Equipment Installation
-                </h1>
-                <p class="text-end max-w-[70%] text-2xl my-5">
-                    "As the bewildered platypus meandered aimlessly through the labyrinthine corridors of the abandoned, ivy-covered mansion that smelled faintly of old   parchment and forgotten memories, an inexplicable sense of déjà vu washed over   it, as if in some peculiar, alternate timeline, it had once been the keeper of an    ancient, mystical artifact capable of unlocking the long-lost secrets of a civilization   that had vanished without a trace, leaving only cryptic symbols etched into the stone walls, whispering tales of a forgotten past to those who dared to listen."
-                </p>
-            </div>
+          
         </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio ullam quasi. Corrupti, debitis! Adipisci esse id ea error aut quaerat fuga, velit optio. Error magnam eveniet odit est laudantium.
+           </div>
    </div>
    <div class="grid lg:grid-cols-3 gap-7 py-7" x-data="{s: ''}">
     <div class="border-[1px] border-gray-300 rounded-xl p-5 flex flex-col justify-between gap-5" :class="s === 's1' ? 'h-auto' : 'h-[400px] lg:h-[505px]'">

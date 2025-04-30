@@ -2,14 +2,14 @@
         
     <x-carousel />
     <div class="grid text-center gap-3 px-4 lg:flex lg:justify-around lg:items-center bg-[#316275] py-5 lg:py-10 text-white">
-        <div class="lg:text-3xl font-bold italic">Celebrating 69 Years of Trusted Service</div>
+        <div class="lg:text-3xl font-bold italic">Celebrating 3 Years of Trusted Service</div>
         <x-button href="/contacts" label="Contact us now!" class="lg:text-xl font-bold" cyan />
     </div>
     <section
         x-data="{ show: false }" 
         x-init="window.addEventListener('scroll', () => { if (window.scrollY > 200) show = true })"
         x-bind:class="show ? 'lg:opacity-100 lg:translate-y-0' : 'lg:opacity-0 lg:translate-y-10'"
-        class=" transition-all duration-700 ease-in-out">
+        class="transition-all duration-700 ease-in-out">
         <div class="grid lg:grid-cols-2 items-center p-5 lg:p-10 space-y-7">
             <div class=" flex items-center justify-center">
                 <div class="space-y-4 lg:space-y-6 lg:px-7 ">
@@ -61,24 +61,24 @@
             <div class="text-4xl font-bold">WHY CHOOSE US</div>
             <div class="lg:mx-[80px] grid grid-cols-2 lg:flex lg:items-center lg:justify-around ">
                 <div class="flex justify-center items-center flex-col text-balance text-center">
-                    <img width="100px" src="{{ asset('images/rate.png') }}" alt="">
-                    <h1 class="text-lg font-bold">Quality Care</h1>
-                    <p class="text-xs">Premium medical equipment for optional patient care</p>
+                    <img width="100px" src="{{ asset('images/trust.png') }}" alt="">
+                    <h1 class="text-lg font-bold">Trusted Quality & Safety</h1>
+                    <p class="text-xs">All our equipment meets international medical standards (FDA, CE certified), ensuring safety and reliability in every use.</p>
+                </div>
+                <div class="flex justify-center items-center flex-col text-balance text-center">
+                    <img width="100px" src="{{ asset('images/hospital.png') }}" alt="">
+                    <h1 class="text-lg font-bold">Expertise You Can Count On</h1>
+                    <p class="text-xs">With over 3 years in the healthcare industry, we understand the needs of hospitals, clinics, and practitioners.</p>
                 </div>
                 <div class="flex justify-center items-center flex-col text-balance text-center">
                     <img width="100px" src="{{ asset('images/rate.png') }}" alt="">
-                    <h1 class="text-lg font-bold">Quality Care</h1>
-                    <p class="text-xs">Premium medical equipment for optional patient care</p>
+                    <h1 class="text-lg font-bold">Wide Product Range</h1>
+                    <p class="text-xs">From diagnostic tools to surgical instruments, we provide a one-stop solution for all your medical equipment needs.</p>
                 </div>
                 <div class="flex justify-center items-center flex-col text-balance text-center">
-                    <img width="100px" src="{{ asset('images/rate.png') }}" alt="">
-                    <h1 class="text-lg font-bold">Quality Care</h1>
-                    <p class="text-xs">Premium medical equipment for optional patient care</p>
-                </div>
-                <div class="flex justify-center items-center flex-col text-balance text-center">
-                    <img width="100px" src="{{ asset('images/rate.png') }}" alt="">
-                    <h1 class="text-lg font-bold">Quality Care</h1>
-                    <p class="text-xs">Premium medical equipment for optional patient care</p>
+                    <img width="100px" src="{{ asset('images/fast-delivery.png') }}" alt="">
+                    <h1 class="text-lg font-bold">Fast & Reliable Delivery</h1>
+                    <p class="text-xs">With a strong logistics network, we ensure timely delivery across regions.</p>
                 </div>
             </div>
         </div>
@@ -86,30 +86,27 @@
             <h1 class="text-4xl font-bold text-center text-[#316275]">SERVICES WE OFFERED</h1>
             <div class="mx-auto grid lg:grid-cols-2 gap-5 gap-x-10 max-w-6xl ">
                 <div class="flex gap-5">
-                    <img class="border-[2px] border-[#316275] rounded-lg w-[110px] h-[110px]"  src="{{ asset('images/rate.png') }}" alt="">
+                    <img class="border-[2px] border-[#316275] rounded-lg w-[110px] h-[110px]"  src="{{ asset('images/maintenance.png') }}" alt="">
                     <div>
-                        <h2 class="uppercase text-[#316275] font-bold">Installation</h2>
-                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati ad rem eos soluta ea cumque sapiente dignissimos 
-                            reiciendis. Quo vero doloremque vitae, id perferendis exercitationem consequatur consectetur similique voluptatum.</p>
+                        <h2 class="uppercase text-[#316275] font-bold">Installation of Medical Equipment</h2>
+                        <p class="text-sm">We install all medical equipment professionally, ensuring it’s set up safely, correctly, and ready to use.</p>
                     </div>
                 </div>
                 <div class="flex gap-5">
-                    <img class="border-[2px] border-[#316275] rounded-lg w-[110px] h-[110px]" src="{{ asset('images/rate.png') }}" alt="">
+                    <img class="border-[2px] border-[#316275] rounded-lg w-[110px] h-[110px]" src="{{ asset('images/mechanic.png') }}" alt="">
                     <div>
-                        <h2 class="uppercase text-[#316275] font-bold">Installation</h2>
-                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati ad rem eos soluta ea cumque sapiente dignissimos 
-                            reiciendis. Quo vero doloremque vitae, id    perferendis exercitationem consequatur consectetur similique voluptatum.</p>
+                        <h2 class="uppercase text-[#316275] font-bold">Repair & Technical Support</h2>
+                        <p class="text-sm">On-site and remote troubleshooting by certified biomedical engineers.</p>
                     </div>
                 </div>
                 <div class="flex gap-5">
-                    <img class="border-[2px] border-[#316275] rounded-lg w-[110px] h-[110px]" src="{{ asset('images/rate.png') }}" alt="">
+                    <img class="border-[2px] border-[#316275] rounded-lg w-[110px] h-[110px]" src="{{ asset('images/demonstration.png') }}" alt="">
                     <div>
-                        <h2 class="uppercase text-[#316275] font-bold">Installation</h2>
-                        <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati ad rem eos soluta ea cumque sapiente dignissimos 
-                            reiciendis. Quo vero doloremque vitae, id perferendis exercitationem consequatur consectetur similique voluptatum.</p>
+                        <h2 class="uppercase text-[#316275] font-bold">User Training & Demonstration</h2>
+                        <p class="text-sm">Hands-on training for healthcare staff to ensure safe and effective equipment usage.</p>
                     </div>
                 </div>
-                <div class="flex gap-5">
+                <!-- <div class="flex gap-5">
                     <img class="border-[2px] border-[#316275] rounded-lg w-[110px] h-[110px]" src="{{ asset('images/rate.png') }}" alt="">
                     <div>
                         <h2 class="uppercase text-[#316275] font-bold">Installation</h2>
@@ -124,7 +121,7 @@
                         <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati ad rem eos soluta ea cumque sapiente dignissimos 
                             reiciendis. Quo vero doloremque vitae, id perferendis exercitationem consequatur consectetur similique voluptatum.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

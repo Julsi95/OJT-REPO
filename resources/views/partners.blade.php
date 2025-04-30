@@ -62,10 +62,10 @@
         </div>
         <div class="grid lg:grid-cols-3 gap-7 py-7" x-data="{s: ''}">
             <div class="border-[1px] border-gray-300 rounded-xl p-5 flex flex-col justify-between gap-5" :class="s === 's1' ? 'h-auto' : 'h-[400px] lg:h-[505px]'">
-                <img class="rounded-2xl max-h-[325px]" src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img class="rounded-2xl max-h-[325px]" src="{{ asset('images/IMG_0123.jpeg') }}" alt="">
                 <div class="space-y-10" >
                     <div style="line-height: .9" class="text-3xl">High Quality Branded Medicine</div>
-                    <div @click.away="s = 's'" :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's1'">
+                    <div  :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's1'">
                         <p>We understand that when it comes to healthcare, quality is non-negotiable. Our extensive range of branded medicines is manufactured under strict regulatory guidelines and backed by scientific research. We prioritize</p>
                         <ul class="text-sm font-medium space-y-2">
                             <li class="flex gap-2"><p>✅</p> <span>Certified Quality: Every product is tested for safety and effectiveness.</span></li>
@@ -74,14 +74,15 @@
                             <li class="flex gap-2"><p>✅</p> <span> Patient Safety First: Ensuring each medicine is reliable, effective, and meets healthcare needs.</span></li>
                         </ul>
                     </div>
-                    <button @click="s = 's1'">View Details</button>
+                    <button :class="s === 's1' ? 'hidden' :''" @click="s = 's1'">View Details</button>
+                    <button :class="s === 's1' ? 'block' :'hidden'" @click="s = ''">Close</button>
                 </div>
             </div>
             <div class="border-[1px] border-gray-300 rounded-xl p-5 flex flex-col justify-between gap-5" :class="s === 's2' ? 'h-auto duration-300 ease-in' : 'h-[400px] lg:h-[505px]'">
-                <img class="rounded-2xl max-h-[325px]" src="https://images.unsplash.com/photo-1518152006812-edab29b069ac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                <img class="rounded-2xl max-h-[325px]" src="{{ asset('images/IMG_0124.jpeg') }}" alt="">
                 <div class="space-y-10" :class="s === 's2' ? 'h-auto' : 'h-[505px]'">
                     <div style="line-height: .9" class="text-3xl">Supplying Best and Latest Medical Equipments</div>
-                    <div @click.away="s = 's'" :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's2'">
+                    <div  :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's2'">
                         <p>Equipped with the latest innovations, our medical equipment enhances patient care, improves diagnostic accuracy, and streamlines medical procedures. We provide</p>
                         <ul class="text-sm font-medium space-y-2">
                             <li class="flex gap-2"><p>✅</p> <span> <strong> State-of-the-Art Technology:</strong> Access to the newest advancements in medical devices.</span></li>
@@ -90,14 +91,15 @@
                             <li class="flex gap-2"><p>✅</p> <span> <strong> Unmatched Customer Support:</strong> Ensuring seamless integration and ongoing assistance.</span></li>
                         </ul>
                     </div>
-                    <button @click="s = 's2'">View Details</button>
+                    <button :class="s === 's2' ? 'hidden' :''" @click="s = 's2'">View Details</button>
+                    <button :class="s === 's2' ? 'block' :'hidden'" @click="s = ''">Close</button>
                 </div>
             </div>
             <div class="border-[1px] border-gray-300 rounded-xl p-5 flex flex-col justify-between gap-5" :class="s === 's3' ? 'h-auto' : 'h-[400px] lg:h-[505px]'">
                 <img class="rounded-2xl max-h-[325px]" src="https://media.istockphoto.com/id/1071110418/photo/ultrasonic-flaw-detector.jpg?s=2048x2048&w=is&k=20&c=4AnDpVytBqv-PmDziYKqndKgt6z-So1gUS8pSo7GuTo=" alt="">
                 <div class="space-y-10" :class="s === 's3' ? 'h-auto' : 'h-[505px]'">
                     <div  style="line-height: .9" class="text-3xl">Installation and Calibration of Medical Equipments </div>
-                    <div @click.away="s = 's'" :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's3'">
+                    <div  :class="s === 's1' ? 'transition-[height]'" class="space-y-5" x-show="s === 's3'">
                         <p>We specialize in the seamless setup and fine-tuning of a wide range of medical equipment, ensuring optimal performance from day one. Our services include</p>
                         <ul class="text-sm font-medium space-y-2">
                             <li class="flex gap-2"><p>✅</p> <span> <strong> Expert Installation:</strong> Our trained professionals handle every step, from setup to integration.</span></li>
@@ -106,14 +108,15 @@
                             <li class="flex gap-2"><p>✅</p> <span> <strong> Ongoing Support & Maintenance:</strong> Keeping your equipment in peak condition for long-term reliability.</span></li>
                         </ul>
                     </div>
-                    <button @click="s = 's3'">View Details</button>
+                    <button :class="s === 's3' ? 'hidden' :''" @click="s = 's3'">View Details</button>
+                    <button :class="s === 's3' ? 'block' :'hidden'" @click="s = ''">Close</button>
                 </div>
             </div>
         </div>
         <div class="py-10 lg:py-40 bg-blue-900">
             {{-- <img class="w-full" src="https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""> --}}
             <div class="flex flex-col justify-center items-center space-y-10">
-                <div class="text-5xl text-white text-center">Our Beloved Partners</div>
+                <div class="text-5xl text-white text-center">Our Beloved Hospital Partners</div>
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 ">
                     <div class="flex justify-center items-center bg-white rounded-lg w-36 h-36 lg:w-52 lg:h-44 px-10">
                         <img class="w-10 h-10 lg:w-14 lg:h-14 rounded-full" src="{{ asset('images/jcorr.png') }}" alt="">
@@ -158,8 +161,8 @@
             <div class="absolute lg:text-[200px] italic text-gray-200 top-0">TESTIMONIAL</div>
             <p class="text-center text-balance text-2xl mx-10 text-gray-900 z-10">Our goal is to foster innovation, drive sustainable growth, and create lasting value for our customers, employees, and stakeholders. Let's stay focused, collaborate effectively, and execute with excellence.</p>
             <div class="">
-                <h2 class="text-xl font-medium">Mary Jane Fabre</h2>
-                <p class="text-sm text-gray-500 text-center">CEO of JCOR</p>
+                <h2  class="text-xl font-medium">Mary Jane Fabre</h2>
+                <p class="text-sm text-gray-500 text-center">President of JCOR</p>
             </div>
         </div>
     </div>

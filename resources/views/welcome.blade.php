@@ -121,7 +121,7 @@
                         <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati ad rem eos soluta ea cumque sapiente dignissimos 
                             reiciendis. Quo vero doloremque vitae, id perferendis exercitationem consequatur consectetur similique voluptatum.</p>
                     </div>
-                </div> -->
+                </divs> -->
             </div>
         </div>
     </section>

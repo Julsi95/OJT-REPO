@@ -76,7 +76,7 @@
             </div>
         </div>
         <div class="py-10 lg:py-40 bg-blue-900">
-            {{-- <img class="w-full" src="https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""> --}}
+            {{-- <img class="w-full" src="https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="1"> --}}
             <div class="flex flex-col justify-center items-center space-y-10">
                 <div class="text-5xl text-white text-center">Our Beloved Partners</div>
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 ">

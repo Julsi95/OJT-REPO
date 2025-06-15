@@ -5,7 +5,7 @@
     {{-- <div class="py-10">
         <div class="max-w-[60%] mx-auto text-center space-y-3">
             <label for="q" class="text-xl lg:text-4xl">Search Equipments</label>
-            <x-input id="q" right-icon="magnifying-glass" class="" />
+            <x-input id="q1" right-icon="magnifying-glass" class="" />
         </div>
 
         <div class="flex justify-center items-center" x-data="{details: false}">

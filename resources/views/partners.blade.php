@@ -56,7 +56,7 @@
                             testing
                         </div>
                      </div>
-                    <!-- DETAIL 1 MODAL  -->
+                    <!-- DETAIL 1 MODaAL  -->
                 </div>
             </div>
         </div>

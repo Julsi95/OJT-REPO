@@ -1,34 +1,30 @@
 <x-layout>
-   <div class=" bg-[#32657a] text-white" >
-        <div class="flex justify-between p-20 items-center" >
-            <p class="font-bold text-2xl">SERVICES WE OFFER</p>
-             <img src="{{ asset('images/jcorr.png') }}" alt="" class="bg-white w-[96px] rounded-lg p-2">
+   <div class=" bg-[#32657a] text-white " >
+        <div class="flex justify-between lg:p-20 p-4 lg:items-center " >
+            <p class="font-bold lg:text-2xl text-lg my-5">SERVICES WE OFFER</p>
+            <img src="{{ asset('images/jcorr.png') }}" alt="" class="bg-white w-[96px] rounded-lg p-2">
         </div>
         <div class="flex overflow-auto  scrollbar-hide" id="serviceScroll">
-            <p class="absolute font-bold text-[150px] w-[50%] translate-x-2/4  text-[#6fabc3] z-0">Services We Offer</p>
-            <div class="min-w-full  flex flex-col  items-end z-[10] px-20 ">
-                <h1 class="font-bold text-7xl max-w-[40%] text-end leading-[99px] my-5">
-                    Equipment Installation
+            <p class="absolute text-center font-bold lg:text-[150px] text-[50px] lg:w-[50%] lg:translate-x-2/4  text-[#6fabc3] z-0 bottom-44">Services We Offer</p>
+            <div class="min-w-full  flex flex-col  items-end z-[10] lg:px-20 p-5 ">
+                <h1 class="font-bold lg:text-7xl lg:max-w-[40%] lg:text-end text-start lg:leading-[99px] lg:my-5 my-3 text-lg">
+                    Medical Equipment Calibration
                 </h1>
-                <p class="text-end max-w-[75%] text-2xl my-5 ">
-                    "As the bewildered platypus meandered aimlessly through the labyrinthine corridors of the abandoned, ivy-covered mansion that smelled faintly of old   parchment and forgotten memories, an inexplicable sense of déjà vu washed over   it, as if in some peculiar, alternate timeline, it had once been the keeper of an    ancient, mystical artifact capable of unlocking the long-lost secrets of a civilization   that had vanished without a trace, leaving only cryptic symbols etched into the stone walls, whispering tales of a forgotten past to those who dared to listen."
+                <p class="text-end lg:max-w-[75%] lg:text-2xl lg:my-5 ">
+                   Ensure the precise, consistent, and reliable performance of your medical devices with our expert calibration services, meticulously conducted by trained professionals using certified procedures and advanced calibration equipment. Our services not only guarantee that your medical instruments deliver accurate results but also ensure full compliance with local and international regulatory standards, including ISO, FDA, and healthcare-specific guidelines. Regular calibration safeguards patient safety, enhances diagnostic accuracy, reduces equipment downtime, and helps you maintain the highest level of clinical and operational excellence.
                 </p>
             </div>
-            <div class="min-w-full  flex flex-col  items-end z-[10] px-20">
-                <h1 class="font-bold text-7xl max-w-[40%] text-end leading-[99px] my-5">
-                    Equipment Installation
+             <div class="min-w-full  flex flex-col  items-end z-[10] lg:px-20 p-5 ">
+                   <h1 class="font-bold lg:text-7xl lg:max-w-[40%] lg:text-end text-start lg:leading-[99px] lg:my-5 my-3 text-lg">
+                    Laboratory Calibration Services
                 </h1>
-                <p class="text-end max-w-[70%] text-2xl my-5">
-                    "As the bewildered platypus meandered aimlessly through the labyrinthine corridors of the abandoned, ivy-covered mansion that smelled faintly of old   parchment and forgotten memories, an inexplicable sense of déjà vu washed over   it, as if in some peculiar, alternate timeline, it had once been the keeper of an    ancient, mystical artifact capable of unlocking the long-lost secrets of a civilization   that had vanished without a trace, leaving only cryptic symbols etched into the stone walls, whispering tales of a forgotten past to those who dared to listen."
+                <p class="text-end lg:max-w-[75%] lg:text-2xl lg:my-5 ">
+                    We offer state-of-the-art calibration services performed in highly controlled laboratory environments specifically designed to meet the rigorous demands of sensitive medical equipment that requires maximum precision and accuracy. Utilizing advanced calibration instruments, traceable measurement standards, and strictly regulated procedures, our expert technicians ensure that each device is meticulously tested, adjusted, and certified to deliver dependable and consistent performance. This controlled setting eliminates environmental variables that could affect calibration accuracy, providing you with results that fully comply with industry regulations and international quality standards. By choosing our laboratory calibration services, you can trust that your critical medical equipment will perform optimally, safeguarding both patient outcomes and clinical integrity.
                 </p>
             </div>
-          
         </div>
-        <div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae distinctio ullam quasi. Corrupti, debitis! Adipisci esse id ea error aut quaerat fuga, velit optio. Error magnam eveniet odit est laudantium.
-           </div>
-   </div>
-   <!-- <div class="grid lg:grid-cols-3 gap-7 py-7" x-data="{s: ''}">
+    </div>
+    <!-- <div class="grid lg:grid-cols-3 gap-7 py-7" x-data="{s: ''}">
     <div class="border-[1px] border-gray-300 rounded-xl p-5 flex flex-col justify-between gap-5" :class="s === 's1' ? 'h-auto' : 'h-[400px] lg:h-[505px]'">
         <img class="rounded-2xl max-h-[325px]" src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?q=80&w=2079&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
         <div class="space-y-10" >

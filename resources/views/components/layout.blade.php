@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+     <link rel="icon" type="image/png" href="{{ asset('images/jcorr.png') }}">
+    <title>
+        Jcor
+    </title>
     <wireui:scripts />
     @livewireStyles
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+  
 </head>
 <body>
+
     <div class=" ">
     <div class=" bg-[#316275] w-full flex justify-end gap-4 px-10 py-1 lg:py-3 text-white font-serif">
         <div class="flex justify-center items-center gap-1">
@@ -43,16 +48,23 @@
                 <a wire:navigate href="/service" class="{{ Request::is('service') ? 'text-[#316275] font-bold underline' : 'text-gray-700 hover:text-[#316275]' }}">SERVICES</a>
                 <a wire:navigate href="/partners" class="{{ Request::is('partners') ? 'text-[#316275] font-bold underline' : 'text-gray-700 hover:text-[#316275]' }}">PARTNERS</a>
                 <a wire:navigate href="/contacts" class="{{ Request::is('contacts') ? 'text-[#316275] font-bold underline' : 'text-gray-700 hover:text-[#316275]' }}">CONTACTS</a>
-                <a wire:navigate href="/products" class="{{ Request::is('products') ? 'text-[#316275] font-bold underline' : 'text-gray-700 hover:text-[#316275]' }}">PRODUCT</a>
+                {{-- <a wire:navigate href="/products" class="{{ Request::is('products') ? 'text-[#316275] font-bold underline' : 'text-gray-700 hover:text-[#316275]' }}">PRODUCT</a> --}}
             </div>
         </nav>
-        <nav class="flex justify-between items-center lg:hidden py-3 px-2 sticky top-0 z-20 bg-white shadow-md">
+        <nav class="flex justify-between items-center lg:hidden py-3 px-2 sticky top-0 z-20 bg-white shadow-md relative" x-data="{navb: false}">
             <div class="py-1 flex items-center gap-2 max-w-[300px]">
                 <img width="35px" src="{{ asset('images/jcorr.png') }}" alt="">
                 <div class=" min-h-[1em] w-px self-stretch bg-gradient-to-tr from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400"></div>
                 <div class="text-lg font-bold leading-5 text-[#316275] font-serif">JCOR MEDICAL EQUIPMENT INC.</div>
             </div>
-            <x-icon name="bars-3" />
+            <button><x-icon @click="navb = true" @click.away="navb = false" name="bars-3" /></button>
+            <div class="fixed right-0 top-28 bg-blue-300 text-white px-3 py-2 w-full grid gap-3" x-cloak x-show="navb">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/service">Services</a>
+                <a href="/partners">Partners</a>
+                <a href="/contacts">Contact</a>
+            </div>
         </nav>
         
         

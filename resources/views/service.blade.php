@@ -5,21 +5,21 @@
             <img src="{{ asset('images/jcorr.png') }}" alt="" class="bg-white w-[96px] rounded-lg p-2">
         </div>
         <div class="flex overflow-auto  scrollbar-hide" id="serviceScroll">
-            <p class="absolute text-center font-bold lg:text-[150px] text-[50px] lg:w-[50%] lg:translate-x-2/4  text-[#6fabc3] z-0 bottom-44">Services We Offer</p>
+                <p class="absolute  text-center font-bold lg:text-[150px] text-[50px] lg:w-[50%] lg:translate-x-2/4  text-[#6fabc3] z-0 ">Services We Offer</p>
             <div class="min-w-full  flex flex-col  items-end z-[10] lg:px-20 p-5 ">
                 <h1 class="font-bold lg:text-7xl lg:max-w-[40%] lg:text-end text-start lg:leading-[99px] lg:my-5 my-3 text-lg">
                     Medical Equipment Calibration
                 </h1>
                 <p class="text-end lg:max-w-[75%] lg:text-2xl lg:my-5 ">
-                   Ensure the precise, consistent, and reliable performance of your medical devices with our expert calibration services, meticulously conducted by trained professionals using certified procedures and advanced calibration equipment. Our services not only guarantee that your medical instruments deliver accurate results but also ensure full compliance with local and international regulatory standards, including ISO, FDA, and healthcare-specific guidelines. Regular calibration safeguards patient safety, enhances diagnostic accuracy, reduces equipment downtime, and helps you maintain the highest level of clinical and operational excellence.
+                Ensure precise, reliable performance of your medical devices with our expert calibration services. Performed by trained professionals using certified procedures and advanced equipment, we guarantee accuracy and full compliance with ISO, FDA, and healthcare standards. Regular calibration protects patient safety, improves diagnostics, minimizes downtime, and supports clinical excellence.
                 </p>
             </div>
-             <div class="min-w-full  flex flex-col  items-end z-[10] lg:px-20 p-5 ">
-                   <h1 class="font-bold lg:text-7xl lg:max-w-[40%] lg:text-end text-start lg:leading-[99px] lg:my-5 my-3 text-lg">
+            <div class="min-w-full  flex flex-col  items-end z-[10] lg:px-20 p-5 ">
+                <h1 class="font-bold lg:text-7xl lg:max-w-[40%] lg:text-end text-start lg:leading-[99px] lg:my-5 my-3 text-lg">
                     Laboratory Calibration Services
                 </h1>
                 <p class="text-end lg:max-w-[75%] lg:text-2xl lg:my-5 ">
-                    We offer state-of-the-art calibration services performed in highly controlled laboratory environments specifically designed to meet the rigorous demands of sensitive medical equipment that requires maximum precision and accuracy. Utilizing advanced calibration instruments, traceable measurement standards, and strictly regulated procedures, our expert technicians ensure that each device is meticulously tested, adjusted, and certified to deliver dependable and consistent performance. This controlled setting eliminates environmental variables that could affect calibration accuracy, providing you with results that fully comply with industry regulations and international quality standards. By choosing our laboratory calibration services, you can trust that your critical medical equipment will perform optimally, safeguarding both patient outcomes and clinical integrity.
+                    We provide advanced calibration services in highly controlled labs, ensuring maximum precision for sensitive medical equipment. Using traceable standards and regulated procedures, our experts deliver accurate, compliant, and reliable results. Our controlled environment eliminates external factors, guaranteeing optimal device performance and patient safety.
                 </p>
             </div>
         </div>
